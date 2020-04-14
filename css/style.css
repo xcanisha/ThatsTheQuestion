@@ -1,0 +1,67 @@
+
+.volume-btn img {
+	width: 50%;
+	display: block;
+  	margin: 8px auto;
+	border-radius: 50%;
+	background-color: #039FDC;
+	padding: 4px;
+}
+
+p {
+	font-family: 'B612 Mono', monospace;
+	font-weight: normal;
+	text-align: center;
+	margin: auto;
+	font-size: 20px;
+}
+
+h1 {
+	font-family: 'B612 Mono', monospace;
+	font-weight: bolder;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 30px
+}
+
+.filler {
+	height: 100px;
+}
+
+.logo img {
+	width: 100%;
+}
+
+.player1 {
+	margin: auto;
+}
+
+.player2 {
+	margin: auto;
+}
+
+.anagram, .main-question, .answer {
+	text-transform: uppercase;
+}
+
+.main-question {
+	background-color: #1b35a8;
+	height: 100px;
+}
+
+.balkje-boven {
+	background-color: #E7F900;
+	border-top-left-radius: 96px;
+	border-top-right-radius: 96px;
+}
+
+.balkje-onder {
+	background-color: #E7F900;
+	border-bottom-left-radius: 96px;
+	border-bottom-right-radius: 96px;
+}
+
+.question-text {
+	margin: auto;
+	background-color: white;
+}
