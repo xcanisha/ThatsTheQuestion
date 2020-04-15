@@ -1,10 +1,24 @@
+:root {
+	--blue-dark: #1B35A8;
+	--blue-light: #039FDC;
+	--yellow: #E7F900;
+}
 
 .volume-btn img {
 	width: 50%;
 	display: block;
   	margin: 8px auto;
 	border-radius: 50%;
-	background-color: #039FDC;
+	background-color: var(--blue-light);
+	padding: 4px;
+}
+
+.pause-btn img {
+	width: 50%;
+	display: block;
+  	margin: 8px auto;
+	border-radius: 50%;
+	background-color: var(--blue-light);
 	padding: 4px;
 }
 
@@ -22,6 +36,14 @@ h1 {
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 30px
+}
+
+h2 {
+	font-family: 'B612 Mono', monospace;
+	font-weight: bolder;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 20px;
 }
 
 .filler {
@@ -45,18 +67,19 @@ h1 {
 }
 
 .main-question {
-	background-color: #1b35a8;
+	background-color: var(--blue-dark);
 	height: 100px;
+	opacity: 80%;
 }
 
 .balkje-boven {
-	background-color: #E7F900;
+	background-color: var(--yellow);
 	border-top-left-radius: 96px;
 	border-top-right-radius: 96px;
 }
 
 .balkje-onder {
-	background-color: #E7F900;
+	background-color: var(--yellow);
 	border-bottom-left-radius: 96px;
 	border-bottom-right-radius: 96px;
 }
@@ -64,4 +87,22 @@ h1 {
 .question-text {
 	margin: auto;
 	background-color: white;
+}
+
+.menu-block {
+	border: 4px solid var(--yellow);
+	border-radius: 45px;
+	background-image: url("../images/background.jpg")
+}
+
+.menu-block img {
+	width: 50%;
+	top: -12%;
+	left: 25%;
+}
+
+.leaderboard {
+	color: white;
+	font-weight: bolder;
+	text-transform: uppercase;
 }
