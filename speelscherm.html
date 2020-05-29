@@ -8,24 +8,24 @@
 
 <!-- Bootstrap -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	
+
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&display=swap" rel="stylesheet">
-	
+
 <!-- Stylesheets -->
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row volume-bar">
-			<div class="col-10"></div>
-			<div class="col-2 pause-btn">
-				<img src="images/pause.png" alt="Volume: On">
+			<div class="col-11"></div>
+			<div class="col-1 pause-btn" onclick="changeVolumeState()">
+				<img src="images/volume-on.png" alt="Volume: On" id="volume-btn">
 			</div>
 		</div>
-		
+
 		<div class="row players-and-logo">
 			<div class="col-1"></div>
 			<div class="col-2 player1">
@@ -43,46 +43,48 @@
 			</div>
 			<div class="col-1"></div>
 		</div>
-		
-		
+
+
 		<div class="row filler"></div>
-		
-		
+
+
 		<div class="row question">
 			<div class="col-2"></div>
 			<div class="col-8 question-text">
-				<p>"Question"</p>
+				<p id="deelvraag">"Question"</p>
+				<button onclick="clicked()">Klik hier om de vraag te zien</button>
 			</div>
 			<div class="col-2"></div>
 		</div>
-		
-		
+
+
 		<div class="row filler"></div>
-		
-		
+
+
 		<div class="row anagram">
 			<div class="col-2"></div>
 			<div class="col-8 balkje-boven">
-				<p>anagram</p>
+				<p id="antwoord_deelvraag">anagram</p>
 			</div>
 			<div class="col-2"></div>
 		</div>
-		
+
 		<div class="row main-question">
 			<div class="col-1"></div>
 			<div class="col-10 question-text">
-				<p>Question</p>
+				<p id="hoofdvraag">Question</p>
 			</div>
 			<div class="col-1"></div>
 		</div>
-		
+
 		<div class="row answer">
 			<div class="col-2"></div>
 			<div class="col-8 balkje-onder">
-				<p>answer</p>
+				<p id="antwoord_hoofdvraag">answer</p>
 			</div>
 			<div class="col-2"></div>
 		</div>
 	</div>
+	<script src="js/main.js" charset="utf-8"></script>
 </body>
 </html>
