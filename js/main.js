@@ -7,7 +7,7 @@ var deelvraagAntwoord;
 var i = 1;
 var anagram;
 var splitted;
-var extraLetter;
+var extraLetter = '';
 
 //Verbinding met API maken
 xhr.open('GET', 'https://opentdb.com/api.php?amount=50&type=multiple');
@@ -31,6 +31,7 @@ xhr.send();
 
 //Functie om de deelvragen te laten zien
 function clicked(){
+  console.log(splitted);
   var randomGetal = Math.round(Math.random()* splitted.length);
   extraLetter = splitted[randomGetal];
   deelvraagAntwoord = deelvragen[i].correct_answer
