@@ -3,9 +3,11 @@ var raw;
 var hoofdvraag;
 var hoofdvraagAntwoord;
 var deelvragen;
+var deelvraagAntwoord;
 var i = 1;
 var anagram;
 var splitted;
+var extraLetter;
 
 //Verbinding met API maken
 xhr.open('GET', 'https://opentdb.com/api.php?amount=50&type=multiple');
@@ -30,10 +32,12 @@ xhr.send();
 //Functie om de deelvragen te laten zien
 function clicked(){
   var randomGetal = Math.round(Math.random()* splitted.length);
-  var extraLetter = splitted[randomGetal];
+  extraLetter = splitted[randomGetal];
+  deelvraagAntwoord = deelvragen[i].correct_answer
   var toAnagram;
-  toAnagram = deelvragen[i].correct_answer + extraLetter;
+  toAnagram = deelvraagAntwoord + extraLetter;
   anagram = shuffleAnagram(toAnagram);
+
   document.getElementById("deelvraag").innerHTML = deelvragen[i].question;
   document.getElementById("antwoord_deelvraag").innerHTML = anagram;
     console.log('Vraag ' + i + ': ' + deelvragen[i].question);
@@ -41,6 +45,10 @@ function clicked(){
     console.log(toAnagram);
 
     i++;
+}
+
+function showAnswer(){
+  document.getElementById("antwoord_deelvraag").innerHTML = deelvraagAntwoord + ' (' + extraLetter + ')';
 }
 
 //Functie om het antwoord van de deelvraag (+ extra letter) om te zetten in een anagram
