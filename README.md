@@ -7,7 +7,7 @@ Mobile and desktop web app based on the TV Show 'That's The Question'.
 1. [Implementation](#implementation)
 1. [Dependencies](#dependencies)
 1. [Installation](#installation)
-1. [Usage](#usage)
+1. [Software Used](#software used)
 1. [API](#api)
 1. [Contributing](#contributing)
 
@@ -15,14 +15,40 @@ Mobile and desktop web app based on the TV Show 'That's The Question'.
 ## Implementation
 Clone the repo to local server.
 
+
 ## Dependencies
-Bootstrap.
+[Bootstrap](https://getbootstrap.com/)
+[jQuery](https://code.jquery.com/)
+[Trivia API](#api)
+
 
 ## Installation
-//Stappenplan hoe je het programma installeert.
+1. Clone this repo or download all files to your local machine using https://github.com/xcanisha/ThatsTheQuestion
 
-## Usage
-Once the app is installed you're ready to play the game.
+If you'd like to run things locally directly from your files:
+2. Go to folder location and open 'index.html' in your preferred browser.
+
+If you'd like to run things on a local server:
+2. Start your preferred software (for example: WAMP, XAMPP, MAMP)
+
+  For MAMP
+  2. Preferences -> Web Server -> Document Root -> Select -> select the correct folder
+  3. Press 'OK'
+  4. Start Servers
+  5. Click 'My Website'
+  6. Have fun!
+
+  For WAMP & XAMPP
+  2. Place downloaded files in local host root folder
+  3. Open preferred browser
+  4. Browse to 'localhost/ThatsTheQuestion'
+
+
+## Software used
+* Atom
+* Adobe -> Dreamweaver, Photoshop, Illustrator
+* GitKraken
+
 
 ## API
 Usage of the Trivia API (https://opentdb.com/) to generate questions and answers.
