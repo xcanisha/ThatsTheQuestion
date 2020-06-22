@@ -23,25 +23,24 @@ Clone the repo to local server.
 
 
 ## Installation
+To run things locally (directly from your files):
 1. Clone this repo or download all files to your local machine using https://github.com/xcanisha/ThatsTheQuestion
-
-If you'd like to run things locally directly from your files:
 1. Go to folder location and open 'index.html' in your preferred browser.
 
-If you'd like to run things on a local server:
-1. Start your preferred software (for example: WAMP, XAMPP, MAMP)
+To run things on a local server using MAMP:
+1. Clone this repo or download all files to your local machine using https://github.com/xcanisha/ThatsTheQuestion
+1. Start MAMP
+1. Preferences -> Web Server -> Document Root -> Select -> select the correct folder
+1. Press 'OK'
+1. 'Start Servers'
+1. Click 'My Website'
+1. Have fun!
 
-  For MAMP
-  1. Preferences -> Web Server -> Document Root -> Select -> select the correct folder
-  1. Press 'OK'
-  1. 'Start Servers'
-  1. Click 'My Website'
-  1. Have fun!
-
-  For WAMP & XAMPP
-  1. Place downloaded files in local host root folder
-  1. Open preferred browser
-  1. Browse to 'localhost/ThatsTheQuestion'
+To run things on a local server using WAMP or XAMPP:
+1. Clone this repo or download all files to your local machine using https://github.com/xcanisha/ThatsTheQuestion
+1. Place downloaded files in local host root folder
+1. Open preferred browser
+1. Browse to 'localhost/ThatsTheQuestion'
 
 
 ## Software
