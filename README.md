@@ -17,9 +17,9 @@ Clone the repo to local server.
 
 
 ## Dependencies
-[Bootstrap](https://getbootstrap.com/)
-[jQuery](https://code.jquery.com/)
-[Trivia API](#api)
+* [Bootstrap](https://getbootstrap.com/)
+* [jQuery](https://code.jquery.com/)
+* [Trivia API](#api)
 
 
 ## Installation
